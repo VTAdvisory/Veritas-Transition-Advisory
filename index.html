@@ -4,43 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veritas Transition Advisory Limited</title>
+
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      color: #ffffff;
+      background: linear-gradient(to right, rgba(0, 50, 90, 0.85), rgba(10, 100, 150, 0.9)),
+                  url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1650&q=80');
+      background-size: cover;
+      background-position: center;
       text-align: center;
-      padding: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      padding: 0 10%;
     }
+
     h1 {
-      font-size: 2.2em;
-      color: #0a0a0a;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      margin-bottom: 0.2em;
     }
+
+    h2 {
+      font-weight: 300;
+      font-size: 1.3em;
+      color: #cde4f5;
+      margin-bottom: 1.5em;
+    }
+
     p {
-      max-width: 600px;
-      margin: 1em auto;
-      font-size: 1.1em;
+      font-size: 1.05em;
       line-height: 1.6em;
+      color: #e6eef5;
     }
-    .tagline {
-      font-style: italic;
-      color: #555;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact {
+      margin-top: 1.8em;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.85em;
+      color: #c5d8e6;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(15px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .content {
+      animation: fadeIn 2s ease-in-out;
     }
   </style>
 </head>
+
 <body>
-  <h1>Veritas Transition Advisory Limited</h1>
-  <p class="tagline">Clarity. Structure. Growth.</p>
+  <div class="content">
+    <h1>Veritas Transition Advisory Limited</h1>
+    <h2>Clarity. Structure. Growth.</h2>
 
-  <p>Our website is currently under construction.</p>
+    <p><em>Our website is currently under construction.</em></p>
+    <p>
+      At <strong>Veritas Transition Advisory Limited</strong>, we help
+      Small and Medium Enterprises navigate key business transitions —
+      from financing and restructuring to strengthening operations and
+      engaging effectively with lenders.
+    </p>
 
-  <p>
-    At Veritas Transition Advisory Limited, we help Small and Medium Enterprises navigate key business transitions — from financing and restructuring to strengthening operations and engaging effectively with lenders.
-  </p>
+    <p>We’ll be launching soon. In the meantime, feel free to reach out:</p>
 
-  <p>We’ll be launching soon. In the meantime, feel free to reach out to us directly:</p>
+    <div class="contact">
+      <p>Email: <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
+      <p>Phone: <a href="tel:+254796529295">+254 796 529 295</a></p>
+    </div>
+  </div>
 
-  <p><strong>Email:</strong> <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
-  <p><strong>Phone:</strong> +254 796 529 295</p>
+  <footer>
+    © 2025 Veritas Transition Advisory Limited | All rights reserved
+  </footer>
 </body>
 </html>
