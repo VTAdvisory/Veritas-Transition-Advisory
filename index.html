@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Reset & body styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', Arial, sans-serif;
@@ -18,12 +17,14 @@
       background-size: cover;
       background-position: center;
       color: #ffffff;
-      text-align: center;
+      height: 100vh;
+      padding: 0 10%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 100vh;
-      padding: 0 10%;
+      align-items: center;
+      text-align: center;
+      position: relative;
     }
 
     .overlay {
@@ -40,6 +41,12 @@
       position: relative;
       z-index: 1;
       animation: fadeIn 2s ease-in-out;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .header {
+      margin-top: -50px; /* raise the title & tagline */
     }
 
     h1 {
@@ -54,10 +61,14 @@
       margin-bottom: 1em;
     }
 
-    p {
-      font-size: 1.05em;
-      line-height: 1.6em;
-      margin: 0.6em 0;
+    .main-text {
+      text-align: left; /* left-align */
+      margin: 2em 0;
+      line-height: 1.8em;
+    }
+
+    .main-text p {
+      margin-bottom: 1em;
     }
 
     a {
@@ -67,16 +78,19 @@
     }
 
     .contact {
-      margin-top: 1.5em;
+      margin-top: 2em;
+      line-height: 1em; /* remove spacing between email & phone */
+    }
+
+    .contact p {
+      margin: 0;
     }
 
     footer {
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      text-align: center;
+      margin-top: 2em;
       font-size: 0.85em;
       color: #c5d8e6;
+      text-align: center;
     }
 
     .blink {
@@ -87,7 +101,12 @@
       font-size: 1.2em;
     }
 
-    /* Animations */
+    img.animated-gif {
+      width: 120px;
+      margin: 20px auto;
+      display: block;
+    }
+
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(15px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -96,12 +115,6 @@
     @keyframes blinker {
       50% { opacity: 0; }
     }
-
-    img.animated-gif {
-      width: 120px;
-      margin: 20px auto;
-      display: block;
-    }
   </style>
 </head>
 
@@ -109,33 +122,11 @@
   <div class="overlay"></div>
 
   <div class="content">
-    <!-- Animated GIF -->
-    <img class="animated-gif" src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif" alt="Website Under Construction">
-
-    <h1>Veritas Transition Advisory Limited</h1>
-    <h2>Clarity. Structure. Growth.</h2>
-
-    <p><em>Our website is currently under construction.</em></p>
-
-    <p>
-      At <strong>Veritas Transition Advisory Limited</strong>, we help
-      Small and Medium Enterprises navigate key business transitions —
-      from financing and restructuring to strengthening operations and
-      engaging effectively with lenders.
-    </p>
-
-    <p>We’ll be launching soon. In the meantime, feel free to reach out directly:</p>
-
-    <div class="contact">
-      <p>📧 <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
-      <p>📞 <a href="tel:+254796529295">0796 529 295</a></p>
+    <div class="header">
+      <img class="animated-gif" src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif" alt="Website Under Construction">
+      <h1>Veritas Transition Advisory Limited</h1>
+      <h2>Clarity. Structure. Growth.</h2>
     </div>
 
-    <p class="blink">Launching Soon...</p>
-  </div>
-
-  <footer>
-    © 2025 Veritas Transition Advisory Limited | All rights reserved
-  </footer>
-</body>
-</html>
+    <div class="main-text">
+      <p>At <strong>Veritas Transition Advisory Limited</strong>, we help Small and Medium Enterprises navigate key business transitions, from fi
