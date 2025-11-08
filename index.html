@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veritas Transition Advisory Limited</title>
 
   <style>
@@ -11,8 +11,8 @@
       padding: 0;
       font-family: "Poppins", Arial, sans-serif;
       color: #ffffff;
-      background: linear-gradient(to bottom, rgba(0, 45, 85, 0.75), rgba(0, 20, 50, 0.85)),
-                  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1650&q=80');
+      background: linear-gradient(to right, rgba(2, 48, 71, 0.8), rgba(33, 158, 188, 0.85)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1650&q=80");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -21,7 +21,7 @@
       flex-direction: column;
       justify-content: center;
       height: 100vh;
-      padding: 0 10%;
+      padding: 0 8%;
       overflow: hidden;
     }
 
@@ -29,23 +29,34 @@
       animation: fadeIn 2s ease-in-out;
     }
 
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     h1 {
       font-size: 2.8em;
-      letter-spacing: 0.5px;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.2em;
+      letter-spacing: 1px;
     }
 
     h2 {
-      font-weight: 300;
-      font-size: 1.4em;
-      color: #dbe9f5;
-      margin-bottom: 1.5em;
+      font-weight: 400;
+      font-size: 1.3em;
+      color: #d0e8f2;
+      margin-bottom: 2em;
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 1.05em;
       line-height: 1.6em;
-      color: #e8f1f8;
+      color: #eaf4f8;
     }
 
     a {
@@ -54,53 +65,68 @@
       font-weight: 600;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
     .contact {
-      margin-top: 2em;
+      margin-top: 1.5em;
+      font-size: 1em;
     }
 
     footer {
       position: absolute;
-      bottom: 15px;
+      bottom: 20px;
       width: 100%;
       text-align: center;
       font-size: 0.85em;
-      color: #cfdfea;
+      color: #c5d8e6;
     }
 
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(15px); }
-      100% { opacity: 1; transform: translateY(0); }
+    /* Animated gear icon */
+    .logo-animation img {
+      width: 100px;
+      animation: rotate 6s linear infinite;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
     }
 
-    /* Optional: gentle fade overlay */
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.25);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
-    .content {
-      position: relative;
-      z-index: 2;
+    /* Blinking "Launching Soon" */
+    .blink {
+      margin-top: 1em;
+      font-size: 1.2em;
+      color: #ffffff;
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0.5;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="overlay"></div>
   <div class="content">
+    <div class="logo-animation">
+      <img
+        src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif"
+        alt="Website under construction"
+      />
+    </div>
+
     <h1>Veritas Transition Advisory Limited</h1>
     <h2>Clarity. Structure. Growth.</h2>
 
-    <p><em>Our website is currently under construction.</em></p>
+    <p>
+      Our website is currently under construction.
+    </p>
     <p>
       At <strong>Veritas Transition Advisory Limited</strong>, we help
       Small and Medium Enterprises navigate key business transitions —
@@ -108,11 +134,18 @@
       engaging effectively with lenders.
     </p>
 
-    <p>We’ll be launching soon. In the meantime, feel free to reach out:</p>
+    <p class="blink">Launching Soon...</p>
 
     <div class="contact">
-      <p>Email: <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
-      <p>Phone: <a href="tel:+254796529295">+254 796 529 295</a></p>
+      <p>
+        Email:
+        <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">
+          oliver.gitahi@veritastransitionadvisory.com
+        </a>
+      </p>
+      <p>
+        Phone: <a href="tel:+254796529295">+254 796 529 295</a>
+      </p>
     </div>
   </div>
 
