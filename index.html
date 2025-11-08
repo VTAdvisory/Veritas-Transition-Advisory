@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veritas Transition Advisory Limited</title>
 
   <style>
@@ -11,39 +11,38 @@
       padding: 0;
       font-family: "Poppins", Arial, sans-serif;
       color: #ffffff;
-      background: linear-gradient(to right, rgba(2, 48, 71, 0.8), rgba(33, 158, 188, 0.85)),
-        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1650&q=80");
+      background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                  url('https://images.unsplash.com/photo-1556740760-6c085f7d3e90?auto=format&fit=crop&w=1650&q=80');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       height: 100vh;
-      padding: 0 8%;
-      overflow: hidden;
+      padding: 5% 10%;
+      box-sizing: border-box;
     }
 
     .content {
       animation: fadeIn 2s ease-in-out;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo img {
+      width: 120px;
+      margin-bottom: 15px;
     }
 
     h1 {
       font-size: 2.8em;
-      margin-bottom: 0.2em;
-      letter-spacing: 1px;
+      margin: 0.2em 0;
     }
 
     h2 {
@@ -57,15 +56,16 @@
       font-size: 1.05em;
       line-height: 1.6em;
       color: #eaf4f8;
+      margin-bottom: 1em;
     }
 
     a {
       color: #ffffff;
-      text-decoration: none;
+      text-decoration: underline;
       font-weight: 600;
     }
 
-    .contact {
+    .contact, .linkedin {
       margin-top: 1.5em;
       font-size: 1em;
     }
@@ -79,24 +79,6 @@
       color: #c5d8e6;
     }
 
-    /* Animated gear icon */
-    .logo-animation img {
-      width: 100px;
-      animation: rotate 6s linear infinite;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
-    }
-
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Blinking "Launching Soon" */
     .blink {
       margin-top: 1em;
       font-size: 1.2em;
@@ -105,28 +87,21 @@
     }
 
     @keyframes blinker {
-      50% {
-        opacity: 0.5;
-      }
+      50% { opacity: 0.5; }
     }
   </style>
 </head>
 
 <body>
   <div class="content">
-    <div class="logo-animation">
-      <img
-        src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif"
-        alt="Website under construction"
-      />
+    <div class="logo">
+      <img src="f134b49b-57aa-4a16-9870-27cb75b2a682.png" alt="Veritas Transition Advisory Logo">
     </div>
 
     <h1>Veritas Transition Advisory Limited</h1>
     <h2>Clarity. Structure. Growth.</h2>
 
-    <p>
-      Our website is currently under construction.
-    </p>
+    <p><em>Our website is currently under construction.</em></p>
     <p>
       At <strong>Veritas Transition Advisory Limited</strong>, we help
       Small and Medium Enterprises navigate key business transitions —
@@ -137,15 +112,12 @@
     <p class="blink">Launching Soon...</p>
 
     <div class="contact">
-      <p>
-        Email:
-        <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">
-          oliver.gitahi@veritastransitionadvisory.com
-        </a>
-      </p>
-      <p>
-        Phone: <a href="tel:+254796529295">+254 796 529 295</a>
-      </p>
+      <p>Email: <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
+      <p>Phone: <a href="tel:+254796529295">+254 796 529 295</a></p>
+    </div>
+
+    <div class="linkedin">
+      <p>Connect with us on <a href="https://www.linkedin.com/in/oliver-gitahi" target="_blank">LinkedIn</a></p>
     </div>
   </div>
 
