@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veritas Transition Advisory Limited</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
+    /* Body & Background */
     body {
       margin: 0;
       padding: 0;
-      font-family: "Poppins", Arial, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       color: #ffffff;
-      background: linear-gradient(to right, rgba(2, 48, 71, 0.8), rgba(33, 158, 188, 0.85)),
-        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1650&q=80");
+      background: linear-gradient(to right, rgba(0, 50, 90, 0.85), rgba(10, 100, 150, 0.9)),
+                  url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1650&q=80');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
-      padding: 0 8%;
-      overflow: hidden;
+      padding: 0 10%;
+      position: relative;
     }
 
+    /* Overlay for better readability */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.45);
+      z-index: 0;
+    }
+
+    /* Content */
     .content {
+      z-index: 1;
+      max-width: 700px;
       animation: fadeIn 2s ease-in-out;
     }
 
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
     h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.2em;
-      letter-spacing: 1px;
+      font-size: 2.5em;
+      margin: 0.2em 0;
     }
 
     h2 {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 1.3em;
-      color: #d0e8f2;
-      margin-bottom: 2em;
+      color: #cde4f5;
+      margin-bottom: 1.5em;
     }
 
     p {
       font-size: 1.05em;
       line-height: 1.6em;
-      color: #eaf4f8;
+      color: #e6eef5;
+      margin-bottom: 1em;
     }
 
     a {
@@ -66,10 +73,10 @@
     }
 
     .contact {
-      margin-top: 1.5em;
-      font-size: 1em;
+      margin-top: 1.8em;
     }
 
+    /* Footer */
     footer {
       position: absolute;
       bottom: 20px;
@@ -77,80 +84,62 @@
       text-align: center;
       font-size: 0.85em;
       color: #c5d8e6;
+      z-index: 1;
     }
 
-    /* Animated gear icon */
-    .logo-animation img {
-      width: 100px;
-      animation: rotate 6s linear infinite;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(15px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Blinking "Launching Soon" */
-    .blink {
-      margin-top: 1em;
-      font-size: 1.2em;
-      color: #ffffff;
+    /* Blinking Launching Soon */
+    .blinking {
       animation: blinker 1.5s linear infinite;
+      font-weight: 500;
+      margin-top: 1em;
+    }
+    @keyframes blinker {
+      50% { opacity: 0; }
     }
 
-    @keyframes blinker {
-      50% {
-        opacity: 0.5;
-      }
+    /* GIF styling */
+    .gif {
+      margin-bottom: 20px;
+      width: 120px;
     }
+
   </style>
 </head>
-
 <body>
-  <div class="content">
-    <div class="logo-animation">
-      <img
-        src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif"
-        alt="Website under construction"
-      />
-    </div>
 
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif" alt="Website under construction" class="gif">
+    
     <h1>Veritas Transition Advisory Limited</h1>
     <h2>Clarity. Structure. Growth.</h2>
 
+    <p><em>Our website is currently under construction.</em></p>
+    
     <p>
-      Our website is currently under construction.
-    </p>
-    <p>
-      At <strong>Veritas Transition Advisory Limited</strong>, we help
-      Small and Medium Enterprises navigate key business transitions —
-      from financing and restructuring to strengthening operations and
-      engaging effectively with lenders.
+      At <strong>Veritas Transition Advisory Limited</strong>, we help Small and Medium Enterprises navigate key business transitions — from financing and restructuring to strengthening operations and engaging effectively with lenders.
     </p>
 
-    <p class="blink">Launching Soon...</p>
+    <p class="blinking">Launching Soon...</p>
 
     <div class="contact">
-      <p>
-        Email:
-        <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">
-          oliver.gitahi@veritastransitionadvisory.com
-        </a>
-      </p>
-      <p>
-        Phone: <a href="tel:+254796529295">+254 796 529 295</a>
-      </p>
+      <p>Email: <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
+      <p>Phone: <a href="tel:+254796529295">+254 796 529 295</a></p>
     </div>
   </div>
 
   <footer>
     © 2025 Veritas Transition Advisory Limited | All rights reserved
   </footer>
+
 </body>
 </html>
