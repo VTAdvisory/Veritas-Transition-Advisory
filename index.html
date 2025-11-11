@@ -1,157 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veritas Transition Advisory Limited</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #f8f9fa;
-    color: #222;
-    line-height: 1.6;
-  }
-  .under-construction {
-    text-align: center;
-    background: #ffecb3;
-    color: #7a5b00;
-    padding: 15px;
-    font-weight: 500;
-    border-bottom: 2px solid #ffd54f;
-  }
-  header {
-    background: linear-gradient(to right, #001f3f, #0074D9);
-    color: white;
-    text-align: center;
-    padding: 100px 20px 80px 20px;
-  }
-  header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-  header h2 { font-weight: 300; font-size: 1.25rem; margin-bottom: 1rem; opacity: 0.9; }
-  section {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    border-radius: 10px;
-  }
-  section h3 { text-align: center; font-size: 1.5rem; color: #003366; margin-top: 30px; }
-  section p, section ul { font-size: 1.05rem; padding: 0 10px 15px 10px; }
-  ul { list-style-type: disc; padding-left: 40px; }
-  .card {
-    background: #f0f3f7;
-    margin: 15px 0;
-    padding: 15px;
-    border-left: 4px solid #0074D9;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  .card:hover { background: #e2e6ea; }
-  .card-content { display: none; padding-top: 10px; }
-  .founder-note {
-    background: #f0f3f7;
-    border-left: 4px solid #0074D9;
-    margin: 30px 20px;
-    padding: 20px;
-    font-style: italic;
-  }
-  .contact { text-align: center; margin: 60px 0; font-size: 1.1rem; line-height: 2; }
-  .contact p { display: inline-block; margin: 0; }
-  .contact a { color: #0074D9; text-decoration: none; }
-  footer {
-    background: #001f3f;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-    font-size: 0.9rem;
-    margin-top: 50px;
-  }
-  @media(max-width:600px) { header h1{font-size:2rem;} section{margin:30px 10px;} }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veritas Transition Advisory Limited</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      background: #f8f9fa;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #001f3f, #0074D9);
+      color: white;
+      text-align: center;
+      padding: 100px 20px 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+
+    section h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 40px;
+      color: #003366;
+    }
+
+    section p, section ul {
+      font-size: 1.05rem;
+      padding: 0 20px 20px 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 60px;
+    }
+
+    .founder-note {
+      background: #f0f3f7;
+      border-left: 4px solid #0074D9;
+      margin: 30px 20px;
+      padding: 20px;
+      font-style: italic;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 60px 0;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .contact p {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .contact a {
+      color: #0074D9;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    .under-construction {
+      text-align: center;
+      background: #ffecb3;
+      color: #7a5b00;
+      padding: 15px;
+      font-weight: 500;
+      border-bottom: 2px solid #ffd54f;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { margin: 30px 10px; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="under-construction">🚧 Our website is currently under construction. A full version will launch soon. 🚧</div>
-
-<header data-aos="fade-down">
-  <h1>Veritas Transition Advisory Limited</h1>
-  <h2>Clarity. Structure. Growth.</h2>
-  <p>Helping Small and Medium Enterprises navigate critical transitions — from financing and restructuring to operational strengthening and sustainable growth.</p>
-</header>
-
-<section data-aos="fade-up">
-  <h3>About Veritas Transition Advisory Limited</h3>
-  <p>Veritas Transition Advisory Limited was founded with a simple goal — to help business owners and management teams find clarity and confidence in moments of change. Whether your business is pursuing new financing, restructuring existing facilities, or redefining internal processes, Veritas brings experience, structure, and insight to guide your next step.</p>
-  <p>Our work blends financial understanding with practical business thinking, ensuring decisions are not just sound on paper but effective in execution.</p>
-</section>
-
-<section data-aos="fade-up">
-  <h3>What We Do</h3>
-
-  <div class="card" onclick="toggleCard(this)">
-    <strong>Financial Positioning</strong>
-    <div class="card-content">Assess and strengthen financial positioning for funding and growth.</div>
+  <div class="under-construction">
+    🚧 Our website is currently under construction. A full version will launch soon. 🚧
   </div>
-  <div class="card" onclick="toggleCard(this)">
-    <strong>Debt & Restructuring</strong>
-    <div class="card-content">Develop practical debt and restructuring strategies tailored to your business.</div>
-  </div>
-  <div class="card" onclick="toggleCard(this)">
-    <strong>Lender Engagement</strong>
-    <div class="card-content">Guide engagement with lenders and investors to ensure clarity and alignment.</div>
-  </div>
-  <div class="card" onclick="toggleCard(this)">
-    <strong>Operations & Reporting</strong>
-    <div class="card-content">Improve internal reporting, planning, and communication processes.</div>
-  </div>
-  <div class="card" onclick="toggleCard(this)">
-    <strong>Business Transitions</strong>
-    <div class="card-content">Support business transition initiatives — from expansion to turnaround.</div>
-  </div>
-</section>
 
-<section data-aos="fade-up">
-  <h3>Our Approach</h3>
-  <ul>
-    <li><strong>Clarity</strong> — understanding where the business stands and where it’s headed.</li>
-    <li><strong>Structure</strong> — creating systems that support both ambition and discipline.</li>
-    <li><strong>Growth</strong> — driving measurable progress, not just plans on paper.</li>
-  </ul>
-  <p><em>Helping businesses navigate transitions with clarity and confidence.</em></p>
-</section>
+  <header>
+    <h1>Veritas Transition Advisory Limited</h1>
+    <h2>Clarity. Structure. Growth.</h2>
+    <p>Helping Small and Medium Enterprises navigate critical transitions — from financing and restructuring to operational strengthening and sustainable growth.</p>
+  </header>
 
-<section data-aos="fade-up">
-  <h3>Founder’s Note</h3>
-  <div class="founder-note">
-    “After 17 years in banking — working with businesses across diverse sectors — I’ve seen that transitions, whether in growth or challenge, are defining moments. Veritas Transition Advisory was born from a desire to guide SMEs through these moments with clarity, structure, and purpose.”
-    <br><br>— <strong>Oliver K. Gitahi</strong>, Founder & Lead Advisor
-  </div>
-</section>
+  <section>
+    <h3>About Veritas Transition Advisory Limited</h3>
+    <p>Veritas Transition Advisory Limited was founded with a simple goal — to help business owners and management teams find clarity and confidence in moments of change.
+    Whether your business is pursuing new financing, restructuring existing facilities, or redefining internal processes, Veritas brings experience, structure, and insight to guide your next step.</p>
+    <p>Our work blends financial understanding with practical business thinking, ensuring decisions are not just sound on paper but effective in execution.</p>
+  </section>
 
-<section class="contact" data-aos="fade-up">
-  <p><strong>📧</strong> <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a> &nbsp; | &nbsp; 
-  <strong>📞</strong> +254 796 529 295</p>
-</section>
+  <section>
+    <h3>What We Do</h3>
+    <ul>
+      <li>Assess and strengthen financial positioning for funding and growth.</li>
+      <li>Develop practical debt and restructuring strategies.</li>
+      <li>Guide engagement with lenders and investors.</li>
+      <li>Improve internal reporting, planning, and communication processes.</li>
+      <li>Support business transition initiatives — from expansion to turnaround.</li>
+    </ul>
+  </section>
 
-<footer>
-  © 2025 Veritas Transition Advisory Limited. All Rights Reserved.
-</footer>
+  <section>
+    <h3>Our Approach</h3>
+    <p>At Veritas, we believe that sustainable growth is built on:</p>
+    <ul>
+      <li><strong>Clarity</strong> — understanding where the business stands and where it’s headed.</li>
+      <li><strong>Structure</strong> — creating systems that support both ambition and discipline.</li>
+      <li><strong>Growth</strong> — driving measurable progress, not just plans on paper.</li>
+    </ul>
+    <p><em>Helping businesses navigate transitions with clarity and confidence.</em></p>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000 });
-  function toggleCard(card) {
-    const content = card.querySelector('.card-content');
-    if(content.style.display === "block"){
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  }
-</script>
+  <section>
+    <h3>Founder’s Note</h3>
+    <div class="founder-note">
+      “After 17 years in banking — working with businesses across diverse sectors — I’ve seen that transitions, whether in growth or challenge, are defining moments. Veritas Transition Advisory was born from a desire to guide SMEs through these moments with clarity, structure, and purpose.”  
+      <br><br>— <strong>Oliver K. Gitahi</strong>, Founder & Lead Advisor
+    </div>
+  </section>
+
+  <section class="contact">
+    <p>
+      <strong>📧</strong> <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a> &nbsp; | &nbsp; 
+      <strong>📞</strong> +254 796 529 295
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Veritas Transition Advisory Limited. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
