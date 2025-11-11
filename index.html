@@ -4,7 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veritas Transition Advisory Limited</title>
+
+  <!-- SEO & Accessibility -->
+  <meta name="description" content="Veritas Transition Advisory Limited helps SMEs navigate business transitions with clarity, structure, and growth-focused financial guidance.">
+  <meta name="keywords" content="business advisory, restructuring, SME consulting, financial advisory Kenya, Veritas Transition Advisory">
+  <meta name="author" content="Veritas Transition Advisory Limited">
+
+  <!-- Open Graph (for Google, LinkedIn, social sharing) -->
+  <meta property="og:title" content="Veritas Transition Advisory Limited">
+  <meta property="og:description" content="Helping businesses navigate transitions with clarity and confidence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://veritastransitionadvisory.github.io/">
+  <meta property="og:image" content="https://veritastransitionadvisory.github.io/preview.png">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
@@ -34,6 +49,10 @@
       opacity: 0.9;
     }
 
+    main {
+      display: block;
+    }
+
     section {
       max-width: 900px;
       margin: 60px auto;
@@ -41,6 +60,14 @@
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       border-radius: 10px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     section h3 {
@@ -76,7 +103,6 @@
     }
 
     .contact p {
-      display: inline-block;
       margin: 0;
     }
 
@@ -103,71 +129,99 @@
       border-bottom: 2px solid #ffd54f;
     }
 
+    .close-btn {
+      margin-left: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
     @media (max-width: 600px) {
+      header { padding: 60px 15px; }
       header h1 { font-size: 2rem; }
       section { margin: 30px 10px; }
+      section h3 { font-size: 1.25rem; }
+      .contact p { display: block; margin: 10px 0; }
     }
   </style>
 </head>
 <body>
 
-  <div class="under-construction">
+  <div class="under-construction" id="banner">
     🚧 Our website is currently under construction. A full version will launch soon. 🚧
+    <span class="close-btn" onclick="document.getElementById('banner').style.display='none'">✖</span>
   </div>
 
   <header>
     <h1>Veritas Transition Advisory Limited</h1>
     <h2>Clarity. Structure. Growth.</h2>
-    <p>Helping Small and Medium Enterprises navigate critical transitions, from financing and restructuring to operational strengthening and sustainable growth.</p>
+    <p>Helping Small and Medium Enterprises navigate critical transitions — from financing and restructuring to operational strengthening and sustainable growth.</p>
   </header>
 
-  <section>
-    <h3>About Veritas Transition Advisory Limited</h3>
-    <p>Veritas Transition Advisory Limited was founded with a simple goal — to help business owners and management teams find clarity and confidence in moments of change.
-    Whether your business is pursuing new financing, restructuring existing facilities, or redefining internal processes, Veritas brings experience, structure, and insight to guide your next step.</p>
-    <p>Our work blends financial understanding with practical business thinking, ensuring decisions are not just sound on paper but effective in execution.</p>
-  </section>
+  <main>
+    <section>
+      <h3>About Veritas Transition Advisory Limited</h3>
+      <p>Veritas Transition Advisory Limited was founded with a simple goal — to help business owners and management teams find clarity and confidence in moments of change.
+      Whether your business is pursuing new financing, restructuring existing facilities, or redefining internal processes, Veritas brings experience, structure, and insight to guide your next step.</p>
+      <p>Our work blends financial understanding with practical business thinking, ensuring decisions are not just sound on paper but effective in execution.</p>
+    </section>
 
-  <section>
-    <h3>What We Do</h3>
-    <ul>
-      <li>Assess and strengthen financial positioning for funding and growth.</li>
-      <li>Develop practical debt and restructuring strategies.</li>
-      <li>Guide engagement with lenders and investors.</li>
-      <li>Improve internal reporting, planning, and communication processes.</li>
-      <li>Support business transition initiatives — from expansion to turnaround.</li>
-    </ul>
-  </section>
+    <section>
+      <h3>What We Do</h3>
+      <ul>
+        <li>Assess and strengthen financial positioning for funding and growth.</li>
+        <li>Develop practical debt and restructuring strategies.</li>
+        <li>Guide engagement with lenders and investors.</li>
+        <li>Improve internal reporting, planning, and communication processes.</li>
+        <li>Support business transition initiatives — from expansion to turnaround.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Our Approach</h3>
-    <p>At Veritas, we believe that sustainable growth is built on:</p>
-    <ul>
-      <li><strong>Clarity</strong> — understanding where the business stands and where it’s headed.</li>
-      <li><strong>Structure</strong> — creating systems that support both ambition and discipline.</li>
-      <li><strong>Growth</strong> — driving measurable progress, not just plans on paper.</li>
-    </ul>
-    <p><em>Helping businesses navigate transitions with clarity and confidence.</em></p>
-  </section>
+    <section>
+      <h3>Our Approach</h3>
+      <p>At Veritas, we believe that sustainable growth is built on:</p>
+      <ul>
+        <li><strong>Clarity</strong> — understanding where the business stands and where it’s headed.</li>
+        <li><strong>Structure</strong> — creating systems that support both ambition and discipline.</li>
+        <li><strong>Growth</strong> — driving measurable progress, not just plans on paper.</li>
+      </ul>
+      <p><em>Helping businesses navigate transitions with clarity and confidence.</em></p>
+    </section>
 
-  <section>
-    <h3>Founder’s Note</h3>
-    <div class="founder-note">
-      “After 17 years in banking — working with businesses across diverse sectors, I’ve seen that transitions, whether in growth or challenge, are defining moments. Veritas Transition Advisory was born from a desire to guide SMEs through these moments with clarity, structure, and purpose.”  
-      <br><br>— <strong>Oliver K. Gitahi</strong>, Founder & Lead Advisor
-    </div>
-  </section>
+    <section>
+      <h3>Founder’s Note</h3>
+      <div class="founder-note">
+        “After 17 years in banking — working with businesses across diverse sectors, I’ve seen that transitions, whether in growth or challenge, are defining moments. Veritas Transition Advisory was born from a desire to guide SMEs through these moments with clarity, structure, and purpose.”  
+        <br><br>— <strong>Oliver K. Gitahi</strong>, Founder & Lead Advisor
+      </div>
+    </section>
 
-  <section>
-    <h3>Contact</h3>
-    <p><strong>📧</strong> <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a> &nbsp; | &nbsp; 
-      <strong>📞</strong> +254 796 529 295
-    </p>
-  </section>
+    <section class="contact">
+      <h3>Contact</h3>
+      <p>
+        <strong>📧</strong> <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a> |
+        <strong>📞</strong> <a href="tel:+254796529295">+254 796 529 295</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
     © 2025 Veritas Transition Advisory Limited. All Rights Reserved.
   </footer>
+
+  <!-- Scroll animation script -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    const reveal = () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", reveal);
+    reveal();
+  </script>
 
 </body>
 </html>
