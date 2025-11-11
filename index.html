@@ -1,125 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veritas Transition Advisory Limited - Website Under Construction</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veritas Transition Advisory Limited</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    /* Body & Background */
     body {
       margin: 0;
-      padding: 0;
-      font-family: "Poppins", Arial, sans-serif;
-      color: #ffffff;
-      background: linear-gradient(to right, rgba(0, 50, 90, 0.7), rgba(10, 100, 150, 0.7)),
-                  url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1650&q=80');
-      background-size: cover;
-      background-position: center;
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      background: #f8f9fa;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #001f3f, #0074D9);
+      color: white;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-      padding: 0 10%;
+      padding: 100px 20px 80px 20px;
     }
 
-    /* Overlay fade-in animation */
-    .content {
-      animation: fadeIn 2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(15px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Header & tagline */
-    h1 {
-      font-size: 2.5em;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
       letter-spacing: 1px;
-      margin-bottom: 0.2em;
     }
 
-    h2 {
+    header h2 {
       font-weight: 300;
-      font-size: 1.3em;
-      color: #cde4f5;
-      margin-bottom: 1.5em;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
     }
 
-    /* Body description */
-    .body-text {
-      font-size: 1.25em; /* Increased font size */
-      line-height: 1.8em;
-      color: #e6eef5;
-      margin: 20px 0;
+    section {
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 10px;
     }
 
-    /* Reach-out section */
-    .contact-section {
-      margin-top: 40px; /* Spacing below body text */
-    }
-
-    .contact p {
-      font-size: 1.05em;
-      margin: 8px 0;
-    }
-
-    /* Links */
-    a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: auto;
-      font-size: 0.85em;
-      color: #c5d8e6;
+    section h3 {
       text-align: center;
-      padding-bottom: 20px;
+      font-size: 1.5rem;
+      margin-top: 40px;
+      color: #003366;
     }
 
-    /* Under Construction GIF */
-    .construction-gif {
-      margin-bottom: 25px;
-      width: 120px;
+    section p, section ul {
+      font-size: 1.05rem;
+      padding: 0 20px 20px 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 60px;
+    }
+
+    .founder-note {
+      background: #f0f3f7;
+      border-left: 4px solid #0074D9;
+      margin: 30px 20px;
+      padding: 20px;
+      font-style: italic;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 60px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #0074D9;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    .under-construction {
+      text-align: center;
+      background: #ffecb3;
+      color: #7a5b00;
+      padding: 15px;
+      font-weight: 500;
+      border-bottom: 2px solid #ffd54f;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { margin: 30px 10px; }
     }
   </style>
 </head>
-
 <body>
-  <div class="content">
-    <!-- Under Construction GIF -->
-    <img src="https://media.tenor.com/YM7Xb_6DqT0AAAAj/loading-gears.gif" 
-         alt="Website under construction" class="construction-gif">
 
-    <!-- Main Heading & Tagline -->
-    <h1>Veritas Transition Advisory Limited</h1>
-    <h2>Clarity. Structure. Growth.</h2>
-
-    <!-- Body Description -->
-    <p class="body-text">
-      At <strong>Veritas Transition Advisory Limited</strong>, we help Small and Medium Enterprises navigate key business transitions — from financing and restructuring to strengthening operations and engaging effectively with lenders.
-    </p>
-
-    <!-- Reach Out Section -->
-    <div class="contact-section">
-      <p>We’ll be launching soon. In the meantime, feel free to reach out directly:</p>
-      <div class="contact">
-        <p>📧 <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
-        <p>📞 <a href="tel:+254796529295">0796 529 295</a></p>
-      </div>
-    </div>
+  <div class="under-construction">
+    🚧 Our website is currently under construction. A full version will launch soon. 🚧
   </div>
 
-  <!-- Footer -->
+  <header>
+    <h1>Veritas Transition Advisory Limited</h1>
+    <h2>Clarity. Structure. Growth.</h2>
+    <p>Helping Small and Medium Enterprises navigate critical transitions — from financing and restructuring to operational strengthening and sustainable growth.</p>
+  </header>
+
+  <section>
+    <h3>About Veritas Transition Advisory Limited</h3>
+    <p>Veritas Transition Advisory Limited was founded with a simple goal — to help business owners and management teams find clarity and confidence in moments of change.
+    Whether your business is pursuing new financing, restructuring existing facilities, or redefining internal processes, Veritas brings experience, structure, and insight to guide your next step.</p>
+    <p>Our work blends financial understanding with practical business thinking, ensuring decisions are not just sound on paper but effective in execution.</p>
+  </section>
+
+  <section>
+    <h3>What We Do</h3>
+    <ul>
+      <li>Assess and strengthen financial positioning for funding and growth.</li>
+      <li>Develop practical debt and restructuring strategies.</li>
+      <li>Guide engagement with lenders and investors.</li>
+      <li>Improve internal reporting, planning, and communication processes.</li>
+      <li>Support business transition initiatives — from expansion to turnaround.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Our Approach</h3>
+    <p>At Veritas, we believe that sustainable growth is built on:</p>
+    <ul>
+      <li><strong>Clarity</strong> — understanding where the business stands and where it’s headed.</li>
+      <li><strong>Structure</strong> — creating systems that support both ambition and discipline.</li>
+      <li><strong>Growth</strong> — driving measurable progress, not just plans on paper.</li>
+    </ul>
+    <p>Our role is to bring insight, balance, and structure to businesses ready to move forward.</p>
+  </section>
+
+  <section>
+    <h3>Founder’s Note</h3>
+    <div class="founder-note">
+      “After 17 years in banking — working with businesses across diverse sectors — I’ve seen that transitions, whether in growth or challenge, are defining moments. Veritas Transition Advisory was born from a desire to guide SMEs through these moments with clarity, structure, and purpose.”  
+      <br><br>— <strong>Oliver K. Gitahi</strong>, Founder & Lead Advisor
+    </div>
+  </section>
+
+  <section class="contact">
+    <p><strong>📧 Email:</strong> <a href="mailto:oliver.gitahi@veritastransitionadvisory.com">oliver.gitahi@veritastransitionadvisory.com</a></p>
+    <p><strong>📞 Phone:</strong> +254 796 529 295</p>
+    <p><strong>🔗 LinkedIn (Company):</strong> <a href="#">Veritas Transition Advisory</a></p>
+    <p><strong>🔗 LinkedIn (Founder):</strong> <a href="#">Oliver Gitahi</a></p>
+  </section>
+
   <footer>
-    © 2025 Veritas Transition Advisory Limited | All rights reserved
+    © 2025 Veritas Transition Advisory Limited. All Rights Reserved.  
+    <br>“Helping businesses navigate transitions with clarity and confidence.”
   </footer>
+
 </body>
 </html>
